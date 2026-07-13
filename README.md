@@ -137,38 +137,6 @@ hh-job-assistant-clean/
 ```
 
 ---
-
-## Что не нужно коммитить в Git
-
-В репозиторий не должны попадать:
-
-```text
-.venv/
-data/browser-profile/
-logs/
-data/*.json
-data/*.jsonl
-config/settings.json
-config/cover_letter.txt
-config/blacklist_companies.txt
-```
-
-Почему:
-
-- `data/browser-profile/` содержит локальный профиль браузера и авторизацию hh.ru;
-- `config/cover_letter.txt` содержит личный текст письма;
-- `config/blacklist_companies.txt` содержит личные настройки;
-- `data/*.jsonl` содержит историю откликов;
-- `logs/` содержит локальные логи работы.
-
-Для Git нужны только example-файлы:
-
-```text
-config/settings.example.json
-config/cover_letter.example.txt
-config/blacklist_companies.example.txt
-```
-
 ---
 
 ## Установка
